@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-5 p-5">
+    <main class="bg-violet-400 w-[400px] h-[500px] rounded-md relative">
+    <input id="display"  type="text" name="display"  class="text-2xl font-semibold  w-[350px] h-30 bg-white m-5 rounded-md absolute outline-none border-none" >
+   
+    </div>
+    <div class="absolute mt-[150px] ml-[30px] grid grid-cols-4 gap-8  ">
+    
+   
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="AC" onclick="display.value='' ">
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="DE"  onclick="display.value=display.value.toString().slice(0,-1)">
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="." onclick="display.value+='.'" >
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="/" onclick="display.value +='/'" >
+        <input  class="bg-red-400 w-10 h-10 rounded" type="button" value="7" onclick="display.value +='7'  " >
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="8"  onclick="display.value +='8'  " >
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="9"   onclick="display.value +='9'  " >
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="+"  onclick="display.value +='+'  " >
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="4"  onclick="display.value +='4'  " >
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="5"  onclick="display.value +='5'  ">
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="6" onclick="display.value +='6'  " >
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="-"  onclick="display.value +='-'  ">
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="1"  onclick="display.value +='1'  ">
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="2"  onclick="display.value +='2'  " >
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="3"  onclick="display.value +='3'  ">
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="*"  onclick="display.value +='*'  ">
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="0"  onclick="display.value +='0'  ">
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="00"  onclick="display.value +='00'  " >
+        <input class="bg-red-400 w-10 h-10 rounded" type="button" value="="  onclick="display.value=eval(display.value)  " >
+      
+   
+      
+        
+    </div>
+        
+    </main>
+   
+</body>
+</html>
